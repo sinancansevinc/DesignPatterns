@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\User\source\repos\DesignPatterns\DesignPatterns.SingletonPattern\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\User\source\repos\DesignPatterns\DesignPatterns.SingletonPattern\.editorconfig" />
+  </ItemGroup>
+
 </Project>
