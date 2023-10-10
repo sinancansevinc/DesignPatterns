@@ -5,6 +5,9 @@
 
 using DesignPatterns.ChainOfResponsibilityPattern.Data;
 using DesignPatterns.ChainOfResponsibilityPattern.Handlers;
+using DesignPatterns.ChainOfResponsibilityPattern.HandlersV2;
+
+//V1 Example 
 
 Handler authentication = new AuthenticationHandler();
 Handler authorization = new AuthorizationHandler();
@@ -21,7 +24,7 @@ var request = new Request
     Token = new Token
     {
         IsExpired = false,
-        Roles = new List<string> { "Customer"}.ToArray(),
+        Roles = new List<string> { "Customer" }.ToArray(),
         Value = "token"
     },
     Order = new Order
@@ -40,3 +43,20 @@ else
 System.Console.WriteLine(response.Message);
 Console.ResetColor();
 Console.ReadLine();
+
+//V2 EXAMPLE
+
+//var level1SupportHandler = new Level1SupportHandler();
+//var level2SupportHandler = new Level2SupportHandler();
+//var level3SupportHandler = new Level3SupportHandler();
+
+//level1SupportHandler.SetNextHandler(level2SupportHandler);
+//level2SupportHandler.SetNextHandler(level3SupportHandler);
+
+//var ticket1 = new Ticket { Severity = Severity.Low };
+//var ticket2 = new Ticket { Severity = Severity.Medium };
+//var ticket3 = new Ticket { Severity = Severity.High };
+
+//level1SupportHandler.HandleTicket(ticket1);
+//level1SupportHandler.HandleTicket(ticket2);
+//level1SupportHandler.HandleTicket(ticket3);
