@@ -1,5 +1,10 @@
 ﻿
+//Creational Pattern
+
 using DesignPatterns.FactoryPattern;
+
+
+
 
 IConsole ps5 = ConsoleFactory.BuyConsole("Ps5", "Purple", 1000);
 IConsole xbox = ConsoleFactory.BuyConsole("XboxSeriesX", "Black", 500);

@@ -1,5 +1,8 @@
 ﻿using DesignPatterns.AbstractFactoryPattern;
 
+// Creational Patterns
+
+
 IAbstractFactory galatasarayFactory = new GalatasarayFactory();
 IAbstractFactory realMadridFactory = new RealMadridFactory();
 

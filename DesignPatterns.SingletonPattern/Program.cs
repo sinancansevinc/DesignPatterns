@@ -8,6 +8,8 @@ Cons:
     - UnitTest is difficult when mocking
 */
 
+//Creational Pattern
+
 using DesignPatterns.SingletonPattern;
 
 var cities = await FakeCities.Instance.GetCities();

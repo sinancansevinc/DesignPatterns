@@ -9,6 +9,8 @@ using DesignPatterns.ChainOfResponsibilityPattern.HandlersV2;
 
 //V1 Example 
 
+//Behavioral Pattern
+
 Handler authentication = new AuthenticationHandler();
 Handler authorization = new AuthorizationHandler();
 Handler validation = new ValidationHandler();
